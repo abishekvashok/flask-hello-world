@@ -6,7 +6,7 @@ def hello_world():
     return 'Hello, World!'
 
 @app.route('/redirect')
-def redirect():
+def redirected():
     url = request.args.get('url')
     return redirect(url)
 
